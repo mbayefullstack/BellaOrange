@@ -1,0 +1,156 @@
+/* Mobile First */
+.container {
+    display: grid;
+    grid-template-rows: auto 4rem auto;
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  /* Header */
+  .header {
+    display: grid;
+    grid-template-columns: 9rem 1fr;
+    grid-template-rows: 4rem;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+  }
+  
+  .navbar {
+    display: none;
+  }
+  
+  .navbar-toggle {
+    display: block;
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    position: relative;
+  }
+  
+  .navbar-toggle .bar {
+    background-color: #000;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 20%;
+    border-radius: 9px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .navbar-toggle .bar:nth-child(1) {
+    top: 15%;
+  }
+  
+  .navbar-toggle .bar:nth-child(2) {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .navbar-toggle .bar:nth-child(3) {
+    bottom: 15%;
+  }
+  
+  .navbar-open .navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3rem;
+  }
+  
+  /* Banner */
+  .baniere {
+    background-image: url(images/baniere.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 30rem;
+    position: relative;
+  }
+  
+  .textbaniere {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+  }
+  
+  .textbaniere1 {
+    font-size: 2rem;
+  }
+  
+  .textbaniere2 {
+    font-size: 5rem;
+    font-weight: bold;
+  }
+  
+  .textbaniere3 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+  
+  .textbaniere4 {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  
+  .bouton {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+  }
+  
+  .bouton1,
+  .bouton2 {
+    display: inline-block;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+  }
+  
+  /* How it works */
+  .deutelephone {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .lesdeuxtel {
+    width: 80%;
+    height: 20rem;
+    background-image: url(images/lesdeuxtel.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+  }
+  
+  .border {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    border: 4px solid #000;
+    z-index: 1;
+  }
+  
+  .how {
+    font-size: 2rem
+  }
+  
+  
+
+
+
+
+
+  
